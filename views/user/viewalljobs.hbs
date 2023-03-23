@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/stylesheets/viewjob">
+
+
+{{#each jobs}}
+<div class="maincardcontainer">
+    <div class="card">
+        <div class="card-details">
+            <p class="text-title title">{{title}}</p>
+            <p class="text-body">qualification:{{qualification}}</p>
+            <p class="text-body">vaccancy:{{vaccancy}}</p>
+            <p class="text-body">salary:{{salary}}</p>
+            <p class="text-body">experience:{{experience}}</p>
+            <p class="text-body">jobtype:{{jobtype}}</p>
+            <p class="text-body">lastdate:{{lastdate}}</p>
+            <p class="text-body">dateposted:{{dateposted}}</p>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <a href="/applyjob/{{_id}}"> <button class="card-button">apply</button></a>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+{{/each}}

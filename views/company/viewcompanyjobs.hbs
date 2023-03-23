@@ -1,0 +1,44 @@
+{{!-- {{#each jobs}}
+<p>name:{{userName}}</p>
+<p>job title:{{jobTitle}}</p>
+<p>status:{{status}}</p>
+
+<a href="/company/viewuserprofiles/{{_id}}"><button>viewuserprofile</button></a>
+<a href="/company/acceptprofile/{{_id}}"><button>accept</button></a>
+<a href="/company/rejectprofile/{{_id}}"><button>reject</button></a>
+{{/each}} --}}
+
+
+<h1>Applied jobs</h1>
+{{#each appliedjob}}
+<p>name:{{userName}}</p>
+<p>job title:{{jobTitle}}</p>
+<p>status:{{status}}</p>
+
+<a href="/company/viewuserprofiles/{{_id}}"><button>viewuserprofile</button></a>
+<a href="/company/acceptprofile/{{_id}}"><button>accept</button></a>
+<a href="/company/rejectprofile/{{_id}}"><button>reject</button></a>
+{{/each}}
+
+<h1>acceptedjob</h1>
+{{#each acceptedjob}}
+<p>name:{{userName}}</p>
+<p>job title:{{jobTitle}}</p>
+<p>status:{{status}}</p>
+
+<a href="/company/viewuserprofiles/{{_id}}"><button>viewuserprofile</button></a>
+{{!-- <a href="/company/acceptprofile/{{_id}}"><button>accept</button></a>
+<a href="/company/rejectprofile/{{_id}}"><button>reject</button></a> --}}
+{{/each}}
+
+
+<h1>rejectedjob</h1>
+{{#each rejectedjob}}
+<p>name:{{userName}}</p>
+<p>job title:{{jobTitle}}</p>
+<p>status:{{status}}</p>
+
+<a href="/company/viewuserprofiles/{{_id}}"><button>viewuserprofile</button></a>
+{{!-- <a href="/company/acceptprofile/{{_id}}"><button>accept</button></a>
+<a href="/company/rejectprofile/{{_id}}"><button>reject</button></a> --}}
+{{/each}}
