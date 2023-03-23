@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/stylesheets/viewjob">
-
+<link rel="stylesheet" href="/stylesheets/viewalljobs.css">
+{{!-- 
 
 {{#each jobs}}
 <div class="maincardcontainer">
@@ -25,4 +25,44 @@
 
 </div>
 
+
+{{/each}} --}}
+<div class="wrapper">
+{{#each jobs}}
+
+<div class="card">
+  <div class="tools">
+    <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div>
+  </div>
+  <div class="card__content">
+    
+        <div class="card-details">
+            <h2 class="text-title title">{{title}}</h2>
+            <p class="text-body">QUALIFICATION: {{qualification}}</p>
+            <p class="text-body">VACCANCY: {{vaccancy}}</p>
+            <p class="text-body">SALARY: {{salary}}</p>
+            <p class="text-body">EXPERIENCE: {{experience}}</p>
+            <p class="text-body">JOBTYPE: {{jobtype}}</p>
+            <p class="text-body">LASTDATE: {{lastdate}}</p>
+            <p class="text-body">DATEPOSTED: {{dateposted}}</p>
+        </div>
+        <div class="buttons">
+            <div class="button ">
+                <a href="/applyjob/{{_id}}"> <button class="card-button button2">APPLY</button></a>
+
+            </div>
+        </div>
+    
+
+  </div>
+</div>
 {{/each}}
+</div>

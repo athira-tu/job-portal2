@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/stylesheets/viewprofile.css">
-<div>
+{{!-- <div>
     <div>
         <img class="image" src="/user/{{profile._id}}.jpg" alt="">
     </div>
@@ -15,4 +15,34 @@
     <p>languages:{{profile.language}}</p>
     <a href="/editprofile"><button>edit</button></a>
 
+</div> --}}
+
+<div class="card">
+  <div class="tools">
+    {{!-- <div class="circle">
+      <span class="red box"></span>
+    </div>
+    <div class="circle">
+      <span class="yellow box"></span>
+    </div>
+    <div class="circle">
+      <span class="green box"></span>
+    </div> --}}
+  </div>
+  <div class="card__content">
+    <div>
+        <img class="image" src="/user/{{profile._id}}.jpg" alt="">
+    </div>
+    <p>name:{{profile.userName}}</p>
+    <p>email:{{profile.email}}</p>
+    <p>phoneNumber:{{profile.phoneNumber}}</p>
+    <p>workstatus:{{profile.workstatus}}</p>
+    <p>about:{{profile.about}} </p>
+    <p>qualification:{{profile.qualification}}</p>
+    <p>skills:{{profile.skills}}</p>
+    <p>experience:{{profile.experience}}</p>
+    <p>jobcategory:{{profile.jobcategory}}</p>
+    <p>languages:{{profile.language}}</p>
+    <a href="/editprofile"><button>edit</button></a>
+  </div>
 </div>
